@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background: #edf2f8;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    line-height: 1.7;
+    font-size: 13px;
+  }
+
+
+  .container {
+    max-width: 980px;
+    margin: 100px auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    /* grid-auto-rows: minmax( 100px, auto); */
+
+  }
+
+  .item {
+ border: 1px solid skyblue;
+ background: steelblue;
+ color: white;
+ font-size: 20px;
+ padding: 20px;
+  }

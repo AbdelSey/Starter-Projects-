@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Lato&family=Oswald:wght@200&family=Smooch+Sans:wght@100&family=Zilla+Slab&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Bungee', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 5em;
+    text-align: center;
+}
+
+
+#value {
+font-size: 2em;
+}
+
+
+.btn-container {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 2em;
+}
+
+
+.btn {
+    padding: 1em;
+    border-radius: 1em;
+    width: 10em;
+}
+
+.btn:hover {
+    background-color: rgba(250, 26, 26, 0.1)
+}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Lato&family=Oswald:wght@200&family=Smooch+Sans:wght@100&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 3px 3px rgba(0,0,0,.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.logo {
+    color: rgba(15, 184, 184, 0.8);
+    padding: 1em;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 1em;
+    margin-right: 2em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.2em; 
+}

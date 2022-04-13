@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: darkblue;
+}
+
+li, a, button {
+    font-family:'Smooch Sans', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    color: turquoise;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.nav__links a {
+    list-style: none;
+    transition:all 0.4s ease 0s;
+}
+
+.nav__links li  {
+    display: inline-block;
+    padding: 0 50px;
+    order:3
+}
+
+a:hover {
+color: red;
+border-bottom: 2px solid white;
+}
+
+
+.logo {
+    cursor: pointer;
+    order:2;
+    margin-right: 0%;
+}
+
+
+button {
+    border-radius: 10px;
+    font-size: 15px;
+
+}
+
+.cta {
+    order: 1;
+}
+
+
+
+
+
+/* tables and under */
+@media (max-width: 768px) {
+
+}
+
+
+
+
+
+
+/* mobile */
+
+@media (max-width: 500px) {
+    header {
+        flex-direction:column;
+    }
+
+    .logo {
+        size: 100px;
+    }
+}

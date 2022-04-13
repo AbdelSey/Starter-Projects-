@@ -1,0 +1,145 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Lato&family=Oswald:wght@200&family=Smooch+Sans:wght@100&family=Zilla+Slab&display=swap');
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+.logo .fa-solid  {
+    font-size: 50px;
+    color: rgba(29, 187, 174, 0.5);
+    cursor: pointer;
+}
+
+body {
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 100vh;
+    width: 100vw;
+
+
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgba(45, 72, 221, 0.308);
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+}
+
+.nav-logos {
+    display: flex;
+    justify-content: space-around;
+    width: 5%;
+}
+
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.nav-links li {
+    list-style-type: none;
+}
+
+
+.nav-logos li {
+    list-style-type: none;
+}
+.nav-logos li a {
+    color: white;
+    letter-spacing: 10px;
+}
+
+.nav-links li a:hover {
+    color: rgba(29, 187, 174, 0.5);
+}
+
+
+.nav-logos li a:hover {
+    color: rgba(29, 187, 174, 0.5);
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    background-color: white;
+    width: 20px;
+    height: 3px;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 40%;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgba(45, 72, 221, 0.308);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-logos {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

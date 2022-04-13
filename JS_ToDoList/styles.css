@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    height: 350px;
+    width: 350px;
+    background-color: rgba(23, 23, 23, 0.1)
+}
+
+.container h1 {
+padding: 15px;
+text-align: center;
+}
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 20px;
+    height: 20px;
+}
+
+
+#inputText {
+    width: 200px;
+}
+
+#toDoContainer {
+    padding: 10px 30px;
+    list-style-type:circle;
+    cursor: pointer;
+}
+
+
+
+
+.text-styling {
+    font-size: 1rem;
+    font-weight: bold;
+}
