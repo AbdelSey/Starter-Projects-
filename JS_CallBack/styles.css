@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+#container {
+    background-color: rgba(200,200, 200, 0.8);
+    width: 50%;
+    height: 500px;
+    font-size: 15px;
+}
